@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="stylesheet" type="text/css" href="digtial-fuel.css" />
+  <title>digital fuel -  Survey</title>
+  <!-- meta tags need to be added -->
+  
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+
+   // jQuery functions go here...
+//.php call to write info to the db tabel for survey results
+    		
+			
+			$('#formsubmit').click( function( event) { event.preventDefault(); var surveydata = $('#survey').serialize(); $.ajax({ url: 'survery.php', data : surveydata, type : 'POST', success: function(data) { console.log('DATA : ' + data ); }, error : function(obj,text){ console.log('ERROR (post data) : ' + text ); } }); })
+			
+  			}
+
+	   
+	
+	)
+
+
+</script>
+  
+<link href="nav.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+		<div id="outerframe">
+			<div id="printheader">
+    		<img src="images/car_banner.jpg" alt="digital fuel">
+            </div>
+      
+      
+            
+         <div id="home-header-fill"><img src="images/legoPieces.JPG" alt="digital fuel">
+         </div>
+    <div class="endcontent"></div>    
+    
+      
+    
+    <div class="one-col-tile">
+    	<div id="home-colc">
+        
+    	<div id="home-strap1">Get Involved!</div>
+        <div id="home-strap2">
+        Here is where you, the customer, can let us know what you want to see on our roadmap! Our objective is to just not bring another product to the market, but to bring something that will change your life for the better. We aim to infuse our mobile experience with payments at the pump. Together we have nearly 30 years experience in the fuel indystry, 7 years in telecoms and mobile applications. Therefore we feel we are the right people to bring alive this possibility. Saying that... the more important matter is to actually bring a product to the market, that you want! 
+        <p> 
+        To get involved, we welcome your feedback and input. Without you, we would be lost. Please spend some time filling in the below survey. </p>
+        
+        <p>Thanks in advance, and we hope together we can make a difference. </p>
+        
+        
+<form id="survey">
+<div class="formitem"><label>First Name:</label><input type="text" name="firstname" /></div>
+<div class="formitem"><label>Last Name:</label> <input type="text" name="surname" /></div>
+<div class="formitem"><label>Email Address:</label> <input type="text" name="email" /></div>
+<div class="formitem"><label>Company:</label> <input type="text" name="company" /></div>
+<div class="formitem"><label>How many Vehicles in your fleet?:</label> <input type="number" name="numvehicles" /></div>
+<div class="formitem"><label>How often do you fill up your vehicle?:</label> <input type="" name="amountfill" /></div>
+<div class="formitem"><label>What is your method of payment at a petrol station?:</label> <input type="text" name="nowpayment" /></div>
+<div class="formitem"><label>Does your vehicle have a tracker?:</label> <input type="text" name="nowtracker" /></div>
+<div class="formitem"><label>Would you consider having a tracker fitted?:</label> <input type="bool" name="trackerq" /></div>
+<div class="formitem"><label>What mobile phone do you have?:</label> <input type="text" name="mobilephone" /></div>
+<div class="formitem"><label>Would you consider paying for your fuel at a petrol station using your mobile phone?:</label> <input type="text" name="paymobile" /></div>
+
+<div class="endcontent"></div>   
+
+<input type="reset" value="Reset" id="formreset"/>
+<div class="formitem"><input type="submit" value="Submit" id="formsubmit" /></div>
+
+</form>
+        
+        </div>
+        </div>
+        </div>
+       
+        
+        <div class="endcontent"></div>  
+        
+ 
+ <!--Navigation bar--> 
+   
+    <div id="navigation"> 
+    	<div class="navigation-item"><a href="http://www.digital-fuel.com">Home</a></div>
+        <div class="navigation-item"><a href="AboutUs.html">About Us</a></div>
+        <div class="navigation-item"><a href="GetInvolved.html">Get Involved</a></div>
+        <div class="navigation-item"><a href="ContactUs.html">Contact Us</a></div>
+        
+</div>
+
+
+    
+    <!-- The footer will include copyright item and sitemap links -->
+	<div id="footer">
+    	<div class="footer-item">copyright - digital fuel</div>
+        <div class="footer-item"><a href="to be updated">site map</a></div>
+        <div class="footer-item"><a href="to be updated">terms & conditions</a></div>
+        </div>
+
+</body>
+</html>

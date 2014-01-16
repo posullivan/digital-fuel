@@ -1,0 +1,115 @@
+
+*/
+#nav {
+	margin: 0;
+	padding:0;
+	/*border: 1px solid #000000;*/
+}
+#nav li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#nav ul {
+	margin: 0;
+	padding: 0;
+	background-color: #4F4D58;
+	position: absolute;
+	left: -9000px;
+	z-index: 10000;
+	
+
+}
+#nav ul a {
+	background-image: none;
+	text-indent: 0;
+	padding: 2px 10px;
+	height: auto;
+	
+}
+#nav a {
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+	margin: 0px;
+	text-indent: -9000px;
+	height: 22px;
+	background-image: url(../global/button-bar-uk.gif);
+	background-repeat: no-repeat;
+	line-height:1.4em;
+	font-size: 0.9em;
+	padding: 0px;
+	border-bottom:none;
+}
+
+#nav a#button1 {background-position: 0px 0px; width: 85px;}
+#nav a#button2 {background-position: -85px 0px; width: 117px;}
+#nav a#button3 {background-position: -202px 0px; width: 133px;}
+#nav a#button4 {background-position: -335px 0px; width: 104px;}
+#nav a#button5 {background-position: -439px 0px; width: 129px;}
+#nav a#button6 {background-position: -568px 0px; width: 151px;}
+#nav a#button7 {background-position: -719px 0px; width: 81px;}
+
+#nav a#button1:hover {background-position: 0px -22px;}
+#nav a#button2:hover, #p7PMnav #button2.p7PMon {background-position: -85px -22px;}
+#nav a#button3:hover, #p7PMnav #button3.p7PMon {background-position: -202px -22px;}
+#nav a#button4:hover, #p7PMnav #button4.p7PMon {background-position: -335px -22px;}
+#nav a#button5:hover, #p7PMnav #button5.p7PMon {background-position: -439px -22px;}
+#nav a#button6:hover, #p7PMnav #button6.p7PMon {background-position: -568px -22px; cursor:default;}
+#nav a#button7:hover, #p7PMnav #button7.p7PMon {background-position: -719px -22px;}
+
+#nav ul a:hover {
+	background-image: none;
+}
+
+/* ------ the current page marker style ------ */
+#nav .df {
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #797785;
+}
+/* ------ the trigger link styles ------- */
+
+
+/*the submenu classes */
+
+#nav .dfhide {
+	left: -9000px;
+}
+#nav .dfshow {
+	left: auto;
+	z-index: 20000 !important;
+}
+/* Top level menu width */
+#nav li {
+	float: left;
+}
+#nav ul li {
+	float: none;
+	border-bottom: 1px solid #222129;
+}
+#nav ul, #dfnav ul li {
+	width: 150px;
+}
+#dfcrumb {
+	font-weight: bold;
+	margin-bottom: 16px;
+	color: #333333;
+}
+#dfcrumb a, #dfcrumb a:visited {
+	font-weight: normal;
+	color: #535FAC;
+}
+#dfcrumb a:hover, #dfcrumb a:active, #dfcrumb a:focus {
+	font-weight: normal;
+	color: #333333;
+}
+#nav a:hover, #nav a:active, #nav a:focus {
+	background-color: #797785;
+	letter-spacing: 0.01px;
+}
+/* remove extra dotted lines from Firefox */
+/* hide from IE mac \*/
+#nav a {overflow: hidden;}
+#nav ul a {overflow: visible;}
+/* end hiding from IE5 mac */
